@@ -71,7 +71,7 @@
   bottom: 0;
   width: 765px;
   height: 608px;
-  object-fit: contain;
+  object-fit: cover;
   z-index: 1;
 }
 
@@ -279,6 +279,7 @@ color: white;
 .kaufman__triangle {
   background-image: url(../images/kaufman-triangle.svg);
   background-repeat: no-repeat;
+  background-size: cover;
   width: 877px;
   height: 877px;
   position: absolute;
