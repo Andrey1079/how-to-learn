@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Научиться учиться</title>
-    <link rel="stylesheet" href="./styles/normalize.css" >
-    <link rel="stylesheet" href="./styles/style.css" >
+    <link rel="stylesheet" href="./vendor/normalize.css" />
+    <link rel="stylesheet" href="./pages/index.css" />
   </head>
   <body>
-    <div class="page">
+    <div class="root">
       <header class="header">
         <div class="logo logo_place_header"></div>
         <h1 class="header__title">Научиться учиться</h1>
@@ -21,14 +21,13 @@
           class="header__main-illustration"
           src="./images/header-image.png"
           alt="Опять двойка"
-        >
+        />
         <div class="header__square-pic"></div>
       </header>
       <main class="content">
         <section class="description">
           <article class="two-columns">
-              <h2 class="two-columns__brief">Главные проблемы в обучении
-              </h2>
+            <h2 class="two-columns__brief">Главные проблемы в обучении</h2>
             <div class="two-columns__main-text">
               <p class="two-columns__paragraph">
                 Ни в школе, ни в институте нас не учат тому, как правильно
@@ -105,48 +104,72 @@
           <div class="feynman__image"></div>
         </section>
         <section class="kaufman">
-          <h2 class="section-title section-title_theme_dark">Принципы обучения</h2>
-          <p class="section-subtitle section-subtitle_theme_dark">От Джоша Кауфмана</p>
+          <h2 class="section-title section-title_theme_dark">
+            Принципы обучения
+          </h2>
+          <p class="section-subtitle section-subtitle_theme_dark">
+            От Джоша Кауфмана
+          </p>
           <ul class="table">
             <li class="table__cell table__cell_theme_dark">
               <h3 class="table__heading table__heading_theme_dark">1</h3>
-              <p class="table__text table__text_theme_dark">Выберите привлекательный проект.</p>
+              <p class="table__text table__text_theme_dark">
+                Выберите привлекательный проект.
+              </p>
             </li>
             <li class="table__cell table__cell_theme_dark">
               <h3 class="table__heading table__heading_theme_dark">2</h3>
-              <p class="table__text table__text_theme_dark">Сосредоточтесь на каком-то одном навыке.</p>
+              <p class="table__text table__text_theme_dark">
+                Сосредоточтесь на каком-то одном навыке.
+              </p>
             </li>
             <li class="table__cell table__cell_theme_dark">
               <h3 class="table__heading table__heading_theme_dark">3</h3>
-              <p class="table__text table__text_theme_dark">Определите целевой уровень мастерства.</p>
+              <p class="table__text table__text_theme_dark">
+                Определите целевой уровень мастерства.
+              </p>
             </li>
             <li class="table__cell table__cell_theme_dark">
               <h3 class="table__heading table__heading_theme_dark">4</h3>
-              <p class="table__text table__text_theme_dark">Разбейте навык на элементы.</p>
+              <p class="table__text table__text_theme_dark">
+                Разбейте навык на элементы.
+              </p>
             </li>
             <li class="table__cell table__cell_theme_dark">
               <h3 class="table__heading table__heading_theme_dark">5</h3>
-              <p class="table__text table__text_theme_dark">Приготовьте все необходимое для занятий.</p>
+              <p class="table__text table__text_theme_dark">
+                Приготовьте все необходимое для занятий.
+              </p>
             </li>
             <li class="table__cell table__cell_theme_dark">
               <h3 class="table__heading table__heading_theme_dark">6</h3>
-              <p class="table__text table__text_theme_dark">Устраните препятствия для занятий.</p>
+              <p class="table__text table__text_theme_dark">
+                Устраните препятствия для занятий.
+              </p>
             </li>
             <li class="table__cell table__cell_theme_dark">
               <h3 class="table__heading table__heading_theme_dark">7</h3>
-              <p class="table__text table__text_theme_dark">Выделите специальное время для занятий.</p>
+              <p class="table__text table__text_theme_dark">
+                Выделите специальное время для занятий.
+              </p>
             </li>
             <li class="table__cell table__cell_theme_dark">
               <h3 class="table__heading table__heading_theme_dark">8</h3>
-              <p class="table__text table__text_theme_dark">Создайте специальные петли обратной связи.</p>
+              <p class="table__text table__text_theme_dark">
+                Создайте специальные петли обратной связи.
+              </p>
             </li>
             <li class="table__cell table__cell_theme_dark">
               <h3 class="table__heading table__heading_theme_dark">9</h3>
-              <p class="table__text table__text_theme_dark">Занимайтесь по расписанию, корткими интенсивными интервалами.</p>
+              <p class="table__text table__text_theme_dark">
+                Занимайтесь по расписанию, корткими интенсивными интервалами.
+              </p>
             </li>
             <li class="table__cell table__cell_theme_dark">
               <h3 class="table__heading table__heading_theme_dark">10</h3>
-              <p class="table__text table__text_theme_dark">Уделяйте внимание количеству и скорости.</p>
+              <p class="table__text table__text_theme_dark">
+                Уделяйте внимание количеству и скорости.
+              </p>
             </li>
           </ul>
           <div class="kaufman__triangle"></div>
@@ -171,19 +194,31 @@
             <ul class="footer__column-links">
               <li>
                 <a class="footer__column-link" href="#">
-                  <img class="footer__social-icon" src="./images/youtube-icon.svg" alt="иконка youtube">
+                  <img
+                    class="footer__social-icon"
+                    src="./images/youtube-icon.svg"
+                    alt="иконка youtube"
+                  />
                   YouTube
                 </a>
               </li>
               <li>
                 <a class="footer__column-link" href="#">
-                  <img class="footer__social-icon" src="./images/vk_color_white.svg" alt="иконка ВК">
+                  <img
+                    class="footer__social-icon"
+                    src="./images/vk_color_white.svg"
+                    alt="иконка ВК"
+                  />
                   ВКонтакте
                 </a>
               </li>
               <li>
                 <a class="footer__column-link" href="#">
-                  <img class="footer__social-icon" src="./images/tiktok-icon.svg" alt="иконка tiktok">
+                  <img
+                    class="footer__social-icon"
+                    src="./images/tiktok-icon.svg"
+                    alt="иконка tiktok"
+                  />
                   TikTok
                 </a>
               </li>
