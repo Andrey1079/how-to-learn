@@ -4,11 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Научиться учиться</title>
-    <link rel="stylesheet" href="./vendor/normalize.css" />
     <link rel="stylesheet" href="./pages/index.css" />
   </head>
   <body>
-    <div class="root">
+    <div class="page">
       <header class="header">
         <div class="logo logo_place_header"></div>
         <h1 class="header__title">Научиться учиться</h1>
@@ -123,14 +122,12 @@
               class="video__iframe"
               src="https://www.youtube.com/embed/5MgBikgcWnY"
               allowfullscreen
-              >Первые 20 часов как выучить что угодно
-            </iframe>
+            ></iframe>
             <iframe
               class="video__iframe"
               src="https://www.youtube.com/embed/arj7oStGLkU"
               allowfullscreen
-              >Что происходит в голове у прокрастинатора</iframe
-            >
+            ></iframe>
           </div>
         </section>
         <section class="oakley">
@@ -205,18 +202,19 @@
           </ul>
         </section>
         <section class="khan">
-          <figure class="khan__container">
-            <figcaption class="khan__author">Салман Хан</figcaption>
-            <cite class="khan__title">Весь мир - школа</cite>
+          <div class="khan__container">
+            <p class="khan__author">Салман Хан</p>
+            <h2 class="khan__title">Весь мир - школа</h2>
             <blockquote class="khan__quote">
-              <p class="khan__quote">
-                Страсть и новаторство Сала Хана меняют процесс обучения
-                миллионов студентов по всему миру. Книгу «Весь мир — школа»
-                нужно прочитать всем, кто занимается образованием — так учащиеся
-                повсюду смогут получить навыки и знания, которые приносят успех
-                в школе, карьере и жизни.
-              </p>
+              Страсть и новаторство Сала Хана меняют процесс обучения миллионов
+              студентов по всему миру. Книгу «Весь мир — школа» нужно прочитать
+              всем, кто занимается образованием — так учащиеся повсюду смогут
+              получить навыки и знания, которые приносят успех в школе, карьере
+              и жизни.
             </blockquote>
+            <!-- Я исправил в код выше в соответствии с замечанием, но в Доке написано,
+              что данный тег нельзя использовать без параграфа:
+              https://doka.guide/html/blockquote/ -->
             <p class="khan__quote-author">Джордж Лукас</p>
             <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
             <div class="khan__book-container">
@@ -229,7 +227,7 @@
                 >Купить книгу &rarr;</a
               >
             </div>
-          </figure>
+          </div>
         </section>
         <section class="kaufman">
           <h2 class="section-title section-title_theme_dark">
@@ -308,28 +306,34 @@
             Больше материалов о техниках и лайфхаках обучения
           </p>
           <ul class="resources__logo-zone">
-            <li class="resources__link link-opacity">
-              <a href="#"
+            <li>
+              <a class="resources__link link-opacity" href="#"
                 ><img
+                  class="resources__logo"
                   src="./images/logo/resources-arzamas.svg"
                   alt="Логотип Арзамас"
               /></a>
             </li>
-            <li class="resources__link link-opacity">
-              <a href="#"
-                ><img src="./images/logo/resources-n1.svg" alt="Логотип N+1"
+            <li>
+              <a class="resources__link link-opacity" href="#"
+                ><img
+                  class="resources__logo"
+                  src="./images/logo/resources-n1.svg"
+                  alt="Логотип N+1"
               /></a>
             </li>
-            <li class="resources__link link-opacity">
-              <a href="#"
+            <li>
+              <a class="resources__link link-opacity" href="#"
                 ><img
+                  class="resources__logo"
                   src="./images/logo/resources-strelka.svg"
                   alt="Логотип стрелка"
               /></a>
             </li>
-            <li class="resources__link link-opacity">
-              <a href="#"
+            <li>
+              <a class="resources__link link-opacity" href="#"
                 ><img
+                  class="resources__logo"
                   src="./images/logo/resources-polka.svg"
                   alt="Логотип Полка"
               /></a>
